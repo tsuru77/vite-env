@@ -1,0 +1,7 @@
+services:
+  app:
+    image: vite-env:test
+    ports:
+      - "3000:3000"
+    args:
+      - VITE_APITEST=${VITE_APITEST}
