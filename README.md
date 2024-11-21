@@ -2,7 +2,7 @@
 
 ## 1 - Building the docker image
 ```bash
-docker build . -t "vite:test:"
+docker build . -t "vite:test"
 ```
 
 ## 2 - Running the container with the image
