@@ -1,11 +1,9 @@
-import { useState } from 'react'
+//import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const name = import.meta.env.VITE_APITEST
   return (
     <>
       <div>
@@ -16,10 +14,8 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-     <h1>Env var: {name} </h1>
-     <script>
-     globalThis.import_meta_env = JSON.parse('"import_meta_env_placeholder"')
-     </script>
+     <h1>Env var: {globalThis.import_meta_env.VITE_APITEST} </h1>
+
     </>
   )
 }

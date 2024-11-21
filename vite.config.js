@@ -5,7 +5,8 @@ import ImportMetaEnvPlugin from "@import-meta-env/unplugin";
 
 export default defineConfig({
  base: "/",
- plugins: [react(),ImportMetaEnvPlugin.vite({ example: ".env" })],
+ //plugins: [react(),],
+ plugins: [react(),ImportMetaEnvPlugin.vite({ example:".env.example",transformMode: "runtime"})],
  preview: {
   port: 8080,
   strictPort: true,
