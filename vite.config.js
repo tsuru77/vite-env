@@ -1,11 +1,11 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-//import importMetaEnv from 'import-meta-env/plugin';
+import ImportMetaEnvPlugin from "@import-meta-env/unplugin";
 
 
 export default defineConfig({
  base: "/",
- plugins: [react(),],
+ plugins: [react(),ImportMetaEnvPlugin.vite({ example: ".env" })],
  preview: {
   port: 8080,
   strictPort: true,
